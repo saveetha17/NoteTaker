@@ -26,6 +26,21 @@ app.post("/api/notes",(req,res) => {
     res.json(db)
 })
 
+app.delete("/api/notes/:id",(req,res) => {
+    let dbNotes = []
+
+    db.forEach(ele =>{
+        if(ele.id != req.params.id){
+            dbNotes.push(ele)
+        }
+    })
+    db =  dbNotes 
+    fs.writeFileSync("./db/db.json",JSON.stringify(db),function(err){
+        if(err) throw err;
+    })
+    console.log("POST",db)
+    res.json(db)
+})
 
 module.exports = app;
 
