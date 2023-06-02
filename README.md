@@ -16,16 +16,17 @@ Note Taker is an application that can be used to write and save notes which will
 
  ![ScreenShot](./Assets/screenShot.png)
 
-## Link to Deployed Application
-
-
 
 ## Link to Github Repository
 
+https://github.com/saveetha17/NoteTaker.git
 
+## Link to Deployed Application
+
+https://saveetha17.github.io/NoteTaker/
 
 ## Link to Heroku
 
-
+https://evening-taiga-05327.herokuapp.com/notes
 
 
